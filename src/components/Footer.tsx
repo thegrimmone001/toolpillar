@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="/" className="flex items-center gap-2 text-lg font-bold">
-              <span className="text-xl">⚡</span>
+              <span className="text-xl">🏛️</span>
               <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                AI Tool Index
+                ToolPillar
               </span>
             </Link>
             <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 border-t border-zinc-200 pt-6 dark:border-zinc-800">
           <p className="text-center text-xs text-zinc-400">
-            &copy; {new Date().getFullYear()} AI Tool Index. All rights reserved.
+            &copy; {new Date().getFullYear()} ToolPillar. All rights reserved.
           </p>
         </div>
       </div>

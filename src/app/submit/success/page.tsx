@@ -26,9 +26,9 @@ function SuccessContent() {
       <div className="mt-8 space-y-3">
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           Next steps: email us at{" "}
-          <a href="mailto:hello@aitoolindex.com" className="text-violet-600 hover:underline">
-            hello@aitoolindex.com
-          </a>{" "}
+          <a href="mailto:hello@toolpillar.com" className="text-violet-600 hover:underline">
+            hello@toolpillar.com
+          </a>
           with your tool details and we'll publish your listing.
         </p>
         <Link

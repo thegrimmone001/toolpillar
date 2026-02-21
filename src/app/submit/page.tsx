@@ -105,7 +105,7 @@ export default function SubmitPage() {
               </div>
             ) : (
               <a
-                href="mailto:hello@aitoolindex.com?subject=Free%20Listing%20Submission"
+                href="mailto:hello@toolpillar.com?subject=Free%20Listing%20Submission"
                 className="mt-8 block rounded-full border border-zinc-300 py-3 text-center text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 {plan.cta}
@@ -118,8 +118,8 @@ export default function SubmitPage() {
       <div className="mt-16 text-center">
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           Questions? Reach out at{" "}
-          <a href="mailto:hello@aitoolindex.com" className="text-violet-600 hover:underline">
-            hello@aitoolindex.com
+          <a href="mailto:hello@toolpillar.com" className="text-violet-600 hover:underline">
+            hello@toolpillar.com
           </a>
         </p>
         <Link href="/tools" className="mt-4 inline-block text-sm text-violet-600 hover:underline">

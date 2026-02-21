@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "AI Tool Index — Discover the Best AI Tools",
-    template: "%s | AI Tool Index",
+    default: "ToolPillar — Discover the Best AI Tools",
+    template: "%s | ToolPillar",
   },
   description:
     "Curated directory of 500+ AI tools for writing, coding, design, marketing, and more. Compare pricing, features, and find the perfect AI tool for your workflow.",
-  keywords: ["AI tools", "artificial intelligence", "AI directory", "AI software", "best AI tools"],
+  keywords: ["AI tools", "artificial intelligence", "AI directory", "AI software", "best AI tools", "ToolPillar"],
 };
 
 export default function RootLayout({
