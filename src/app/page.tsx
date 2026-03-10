@@ -2,6 +2,7 @@ import Link from "next/link";
 import { tools, getFeaturedTools } from "@/data/tools";
 import { ALL_CATEGORIES, CATEGORY_META } from "@/types";
 import ToolCard from "@/components/ToolCard";
+import AdBanner from "@/components/AdBanner";
 
 export default function Home() {
   const featured = getFeaturedTools();
@@ -39,6 +40,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ad Banner — between hero and featured */}
+      <AdBanner slot="top-banner" format="horizontal" className="py-4" />
+
       {/* Featured Tools */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="flex items-center justify-between">
@@ -53,6 +57,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Ad Banner — between featured and categories */}
+      <AdBanner slot="mid-banner" format="horizontal" className="pb-4" />
 
       {/* Categories */}
       <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { tools, getToolBySlug, getToolsByCategory } from "@/data/tools";
 import { CATEGORY_META } from "@/types";
 import ToolCard from "@/components/ToolCard";
+import AdBanner from "@/components/AdBanner";
 
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
@@ -100,6 +101,9 @@ export default async function ToolPage({ params }: Props) {
             {tool.pricingNote && ` · ${tool.pricingNote}`}
           </span>
         </div>
+
+        {/* Ad Banner — below CTA */}
+        <AdBanner slot="tool-detail" format="horizontal" className="mt-8" />
 
         {/* Description */}
         <div className="mt-10">

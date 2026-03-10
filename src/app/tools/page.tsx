@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SearchBar from "@/components/SearchBar";
+import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
   title: "Browse All AI Tools",
@@ -16,6 +17,8 @@ export default function ToolsPage() {
       <div className="mt-8">
         <SearchBar />
       </div>
+      {/* Ad banner below search results */}
+      <AdBanner slot="tools-list" format="horizontal" className="mt-8" />
     </div>
   );
 }

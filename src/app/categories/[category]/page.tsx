@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getToolsByCategory } from "@/data/tools";
 import { ALL_CATEGORIES, CATEGORY_META, Category } from "@/types";
 import ToolCard from "@/components/ToolCard";
+import AdBanner from "@/components/AdBanner";
 
 export function generateStaticParams() {
   return ALL_CATEGORIES.map((cat) => ({ category: cat }));
@@ -54,6 +55,9 @@ export default async function CategoryPage({ params }: Props) {
           <ToolCard key={tool.slug} tool={tool} />
         ))}
       </div>
+
+      {/* Ad Banner — below tool grid */}
+      <AdBanner slot="category-bottom" format="horizontal" className="mt-8" />
 
       {/* Other categories */}
       <div className="mt-16">
