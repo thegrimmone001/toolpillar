@@ -17,6 +17,9 @@ export default function Header() {
           <Link href="/categories/code-dev" className="transition-colors hover:text-zinc-900 dark:hover:text-white">
             Categories
           </Link>
+          <Link href="/forge" className="transition-colors hover:text-orange-600 dark:hover:text-orange-400">
+            🔥 ModelForge
+          </Link>
         </nav>
         <Link
           href="/submit"
